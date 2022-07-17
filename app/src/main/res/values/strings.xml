@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Navigtion_Component</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="channel_name">deep_link</string>
+    <string name="channel_description">deeplinkdes</string>
+    <string name="txt_tran_to_detail">Chuyển hướng tới bài viết có id là %1$s</string>
+</resources>
