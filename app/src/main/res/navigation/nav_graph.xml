@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/sendDataFragment">
+
+    <fragment
+        android:id="@+id/sendDataFragment"
+        android:name="com.example.navigtion_component.fragment.SendDataFragment"
+        android:label="fragment_send_data"
+        tools:layout="@layout/fragment_send_data" >
+        <action
+            android:id="@+id/action_sendDataFragment_to_takeFragmentBundle"
+            app:destination="@id/takeFragmentBundle" />
+        <action
+            android:id="@+id/action_sendDataFragment_to_takeFragmentSafeArgs"
+            app:destination="@id/takeFragmentSafeArgs" />
+        <action
+            android:id="@+id/action_sendDataFragment_to_detailFragment2"
+            app:destination="@id/detailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/takeFragmentBundle"
+        android:name="com.example.navigtion_component.fragment.BlankFragment"
+        android:label="fragment_take_bundle"
+        tools:layout="@layout/fragment_take_bundle" />
+    <fragment
+        android:id="@+id/takeFragmentSafeArgs"
+        android:name="com.example.navigtion_component.fragment.TakeFragmentSafeArgs"
+        android:label="fragment_take_safe_args"
+        tools:layout="@layout/fragment_take_safe_args" >
+        <argument
+            android:name="sendContent"
+            app:argType="string"
+            android:defaultValue="mit chin" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.example.navigtion_component.fragment.DetailFragment"
+        android:label="DetailFragment" />
+</navigation>
